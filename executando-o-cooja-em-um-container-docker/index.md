@@ -58,6 +58,12 @@ sudo apt update
 sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 
+* Inicie e ative o serviço do Docker
+
+```bash
+sudo systemctl start docker && sudo systemctl enable docker
+```
+
 * Dê permissão para que o usuário atual possa executar o Docker:
 
 ```bash
