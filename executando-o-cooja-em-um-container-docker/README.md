@@ -64,12 +64,6 @@ sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin d
 sudo systemctl start docker && sudo systemctl enable docker
 ```
 
-* Dê permissão para que o usuário atual possa executar o Docker:
-
-```bash
-sudo usermod -aG docker $USER
-```
-
 ## 2. Baixando e executando o container Docker do Contiki-NG e o Cooja
 
 Agora que temos o Git e o Docker instalados, já podemos baixar e executar o container do Contiki-NG, que fornece um ambiente pronto para a execução do Cooja.
@@ -77,7 +71,7 @@ Agora que temos o Git e o Docker instalados, já podemos baixar e executar o con
 * Faça download da imagem do container do Contiki-NG:
 
 ```bash
-docker pull contiker/contiki-ng
+sudo docker pull contiker/contiki-ng
 ```
 
 * Faça download do repositório do Contiki-NG:
@@ -106,7 +100,7 @@ echo 'export CNG_PATH=/home/$USER/contiki-ng' >> ~/.profile
 ```
 
 ```bash
-echo 'alias contiker="docker run --privileged --sysctl net.ipv6.conf.all.disable_ipv6=0 --mount type=bind,source=$CNG_PATH,destination=/home/user/contiki-ng -e DISPLAY=$DISPLAY -e LOCAL_UID=$(id -u $USER) -e LOCAL_GID=$(id -g $USER) -v /tmp/.X11-unix:/tmp/.X11-unix -v /dev/bus/usb:/dev/bus/usb -ti contiker/contiki-ng"' >> ~/.profile
+echo 'alias contiker="sudo docker run --privileged --sysctl net.ipv6.conf.all.disable_ipv6=0 --mount type=bind,source=$CNG_PATH,destination=/home/user/contiki-ng -e DISPLAY=$DISPLAY -e LOCAL_UID=$(id -u $USER) -e LOCAL_GID=$(id -g $USER) -v /tmp/.X11-unix:/tmp/.X11-unix -v /dev/bus/usb:/dev/bus/usb -ti contiker/contiki-ng"' >> ~/.profile
 ```
 
 ```bash
