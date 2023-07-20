@@ -76,33 +76,33 @@ cd ~/contiki-ng/tools/cooja ; ./gradlew run
 
 Na tela inicial do Cooja, clique em `File->Open Simulation->Browse..`. para buscar por uma simulação:
 
-<img src="img/1.png" width=500>
+<img src="img/1.png" width=700>
 
 Na janela que abrir, clique em `Home` (figura da casa) e depois entre na pasta `contiki-ng`:
 
-<img src="img/2.png" width=500>
+<img src="img/2.png" width=700>
 
 Agora entre na pasta `MQTT-SN-Contiki---HomeStark`:
 
-<img src="img/3.png" width=500>
+<img src="img/3.png" width=700>
 
 Entre na pasta `simulacoes`:
 
-<img src="img/4.png" width=500>
+<img src="img/4.png" width=700>
 
 Dê dois cliques sobre o arquivo `mqtt_slip_br.csc`:
 
-<img src="img/5.png" width=500>
+<img src="img/5.png" width=700>
 
 Será aberta uma janela de configuração da simulação. Nessa janela, clique em `create`:
 
-<img src="img/7.png" width=500>
+<img src="img/7.png" width=700>
 
 *__OBS__*: Se aparecerem outras janelas de configuração, apenas selecione **OK** para todas.
 
 A simulação irá abrir. Inicie a simulação clicando em `Start/Pause`:
 
-<img src="img/6.png" width=500>
+<img src="img/6.png" width=700>
 
 ## 7. Tunelamento entre broker simulado e broker real
 
@@ -116,8 +116,8 @@ cd ~/contiki-ng/MQTT-SN-Contiki---HomeStark/scripts_aux ./webserver_slip.sh
 
 Terminal do cliente:
 
-<img src="img/9.png" width=500>
+<img src="img/9.png" width=700>
 
 Terminal do broker:
 
-<img src="img/10.png" width=500>
+<img src="img/10.png" width=700>
