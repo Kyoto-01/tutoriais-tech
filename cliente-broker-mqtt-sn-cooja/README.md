@@ -3,7 +3,11 @@
 ## Pré-requisitos
 
 ```
-sudo apt update && sudo apt install -y unzip git make gcc mosquitto-clients
+sudo apt update && sudo apt install -y unzip git make gcc mosquitto-clients default-jdk ant
+```
+
+```
+update-alternatives --config java
 ```
 
 ## 1. Download do Contiki-NG 
