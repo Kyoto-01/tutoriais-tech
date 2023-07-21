@@ -3,7 +3,7 @@
 ## Pré-requisitos
 
 ```
-sudo apt update && sudo apt install -y unzip git
+sudo apt update && sudo apt install -y unzip git make gcc
 ```
 
 ## 1. Download do Contiki-NG 
