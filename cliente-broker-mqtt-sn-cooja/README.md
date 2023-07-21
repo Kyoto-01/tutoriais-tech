@@ -63,7 +63,7 @@ cd ~/contiki-ng/MQTT-SN-Contiki---HomeStark/tools/mosquitto.rsmb/rsmb/src ; ./br
 Abra mais um novo terminal e execute um cliente MQTT-SN para receber todas as mensagens que chegarem ao broker:
 
 ```bash
-mosquitto_sub -t "#" -v
+mosquitto_sub -t "#" -v -i teste
 ```
 
 Abra outro novo terminal e execute o Cooja:
