@@ -2,10 +2,8 @@
 
 ## Pré-requisitos
 
-* unzip
-
 ```
-sudo apt install -y unzip
+sudo apt update && sudo apt install -y unzip git
 ```
 
 ## 1. Download do Contiki-NG 
