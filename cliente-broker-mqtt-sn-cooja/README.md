@@ -14,6 +14,10 @@ No diretório home de seu usuário, clone o repositório do Contiki-NG:
 cd ; git clone https://github.com/contiki-ng/contiki-ng.git
 ```
 
+```bash
+cd ~/contiki-ng ; git submodule update --init --recursive
+```
+
 ## 2. Download da implementação do MQTT-SN para Contiki
 
 Dentro do repositório do Contiki-NG, clone o repositório do MQTT-SN:
