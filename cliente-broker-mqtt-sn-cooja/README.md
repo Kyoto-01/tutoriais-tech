@@ -41,7 +41,7 @@ cd ~/contiki-ng/tools/serial-io ; make
 Modifique o script de inicialização do tunslip6 para que utilize `sudo` e também para que acesse a pasta atual do tunslip6:
 
 ```bash
-cd ~/contiki-ng/MQTT-SN-Contiki---HomeStark/scripts_aux ; rm webserver_slip.sh ; echo -e "#!/bin/bash\nsudo $HOME/contiki-ng/tools/serial-io/tunslip6 -a 127.0.0.1 aaaa::1/64\n"
+cd ~/contiki-ng/MQTT-SN-Contiki---HomeStark/scripts_aux ; echo -e '#!'"/bin/bash\nsudo $HOME/contiki-ng/tools/serial-io/tunslip6 -a 127.0.0.1 aaaa::1/64\n" > webserver_slip.sh ; chmod +x webserver_slip.sh
 ```
 
 ## 5. Descompactação do broker MQTT-SN
