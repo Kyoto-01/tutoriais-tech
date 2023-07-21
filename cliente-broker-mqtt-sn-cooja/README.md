@@ -3,7 +3,7 @@
 ## Pré-requisitos
 
 ```
-sudo apt update && sudo apt install -y unzip git make gcc
+sudo apt update && sudo apt install -y unzip git make gcc mosquitto-clients
 ```
 
 ## 1. Download do Contiki-NG 
