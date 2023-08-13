@@ -115,7 +115,7 @@ A simulação irá abrir. Inicie a simulação clicando em `Start/Pause`:
 Abra um novo terminal e crie um tunelamento entre o broker do Cooja e o da máquina real utilizando o script de inicialização do tunslip6:
 
 ```bash
-cd ~/contiki-ng/MQTT-SN-Contiki---HomeStark/scripts_aux ./webserver_slip.sh
+cd ~/contiki-ng/MQTT-SN-Contiki---HomeStark/scripts_aux ; ./webserver_slip.sh
 ```
 
 ## 8. Observe os terminais do broker e do cliente anteriormente inicializados
